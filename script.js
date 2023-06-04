@@ -35,6 +35,7 @@ canvas.addEventListener("touchstart",(event)=>{
     mouse.y = event.y;
     for(let i = 0; i<5; i++){
         particlesArray.push(new Particle());
+        alert("Hello");
     }
 });
 canvas.addEventListener("touchmove",(event)=>{
@@ -42,6 +43,8 @@ canvas.addEventListener("touchmove",(event)=>{
     mouse.y = event.y;
     for(let i = 0; i<5; i++){
         particlesArray.push(new Particle());
+        alert("Hello");
+        
     }
 });
 
@@ -50,6 +53,8 @@ canvas.addEventListener("touchend",(event)=>{
     mouse.y = event.y;
     for(let i = 0; i<5; i++){
         particlesArray.push(new Particle());
+        alert("Hello");
+        
     }
 });
 
