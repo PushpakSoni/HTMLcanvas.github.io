@@ -30,7 +30,15 @@ canvas.addEventListener("mousemove",(event)=>{
     }
 });
 
-canvas.addEventListener("ontouchmove",(event)=>{
+canvas.addEventListener("onmousedown",(event)=>{
+    mouse.x = event.x;
+    mouse.y = event.y;
+    for(let i = 0; i<5; i++){
+        particlesArray.push(new Particle());
+    }
+});
+
+canvas.addEventListener("onmouseup",(event)=>{
     mouse.x = event.x;
     mouse.y = event.y;
     for(let i = 0; i<5; i++){
